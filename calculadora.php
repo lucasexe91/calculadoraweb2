@@ -18,10 +18,17 @@
         </nav>
 <?php  
     
+    if (is_numeric($_REQUEST("operando1")) || (is_numeric($_REQUEST("operando2"))) || empty($_REQUEST('operacion'))){
+
+        echo 'datos faltantes o no validos';
+        die();
+
+    }
+
     $op1 = $_REQUEST("operando1");
     $op2 = $_REQUEST("operando2");
     $operacion = $_REQUEST("operacion");
-    $resultado = 0;
+
     switch ($operacion){
         case 'suma': 
             $resultado = $op1 + $op2
