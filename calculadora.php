@@ -8,12 +8,12 @@
         <title>Web II Calculadora</title>
     </head>
     <body>
-    
+        <h1>Trabajo practico web 2 TUDAI UNICEN</h1>
         <nav>
             <ul>
                 <li><a href="index.html">calculadora</a></li>
                 <li><a href="pi.php">numero pi</a></li>
-                <li><a href="index.html">about</a></li>
+                <li><a href="about.php">about</a></li>
             </ul>
         </nav>
 <?php  

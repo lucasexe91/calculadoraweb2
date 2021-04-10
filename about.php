@@ -16,13 +16,14 @@
             </ul>
         </nav>
 
+        <h1>Acerca de nosotros... </h1>
+        <p>neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <ul>
+            <li><a href="about.php?developer=matias">Matias</a></li>
+            <li><a href="about.php?developer=matias">Selene</a></li>
+        </ul>
     <?php
-        function showPiDetails(){
-            echo "<h1>El número Pi</h1>";
-            echo "<p>es la relación entre la longitud de una circunferencia y su diámetro en geometría euclidiana. Es irracional y una de las constantes matemáticas más importante</p>";
-            echo "<p>El valor es: <strong>" . pi() . "<strong></p>";
-        }
-        showPiDetails();
+        echo $_GET['developer'];
     ?>
 
     </body>
