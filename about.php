@@ -23,7 +23,17 @@
             <li><a href="about.php?developer=matias">Selene</a></li>
         </ul>
     <?php
-        echo $_GET['developer'];
+        if (isset($_GET['developer'])){
+            $developer = $_GET['developer'];
+            if ($developer='matias'){
+                echo '<h2>Matias</h2>';
+                echo '<p>Es re gags :v</p>';
+            }
+            if ($developer='selene'){
+                echo '<h2>Selene</h2>';
+                echo '<p>No me pegues u.u</p>';
+            }
+        }
     ?>
 
     </body>
