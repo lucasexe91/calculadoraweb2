@@ -17,6 +17,7 @@
             </ul>
         </nav>
 <?php  
+    require_once 'operaciones.php';
     
     if (is_numeric($_REQUEST("operando1")) || (is_numeric($_REQUEST("operando2"))) || empty($_REQUEST('operacion'))){
 
@@ -24,27 +25,25 @@
         die();
 
     }
-
+    
     $op1 = $_REQUEST("operando1");
     $op2 = $_REQUEST("operando2");
     $operacion = $_REQUEST("operacion");
 
     switch ($operacion){
         case 'suma': 
-            $resultado = $op1 + $op2
-            echo 'El resultado de la operacion suma es: ' .$resultado;
+            echo 'El resultado de la operacion suma es: ' . suma($op1,$op2);;
             break;
         case 'resta':
-            $resultado = $op1 - $op2
-            echo 'El resultado de la operacion resta es: ' .$resultado;
+            
+            echo 'El resultado de la operacion resta es: ' . resta($op1,$op2);;
             break;
         case 'division':
-            $resultado = $op1 / $op2
-            echo 'El resultado de la operacion division es: ' .$resultado;
+            echo 'El resultado de la operacion division es: ' . division($op1,$op2);;
             break;
         case 'multiplicacion':
-            $resultado = $op1 * $op2
-            echo 'El resultado de la operacion multiplicacion es: ' .$resultado;
+            
+            echo 'El resultado de la operacion multiplicacion es: ' . multiplicacion($op1,$op2);;
             break;
         default:
             echo 'Error! operacion no valida';
