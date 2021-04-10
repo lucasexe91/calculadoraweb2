@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web II Calculadora</title>
 </head>
 <body>
+
+    <nav>
+        
+    </nav>
+
+    <h1>calculadora</h1>
     
+    <form id ="calc" action="calculadora.php" method="GET">
+        <input type="number" name="operando1">
+        <input type="number" name="operando2">
+        <select name="operacion">
+            <option value="suma">sumar</option>
+            <option value="resta">restar</option>
+            <option value="division">dividir</option>
+            <option value="multiplicacion">multiplicar</option>
+        </select>
+        <input type="submit" value="calcular">
+    </form>
 </body>
 </html>
