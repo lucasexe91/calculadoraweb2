@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+function showHome() {
+    $html = '
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,16 +22,22 @@
 
     <h1>calculadora</h1>
     
-    <form id ="calc" action="calculadora.php" method="GET">
-        <input type="number" name="operando1">
-        <input type="number" name="operando2">
+    <form>
         <select name="operacion">
             <option value="suma">sumar</option>
             <option value="resta">restar</option>
             <option value="division">dividir</option>
             <option value="multiplicacion">multiplicar</option>
         </select>
+        <input type="number" name="operando1">
+        <input type="number" name="operando2">
         <input type="submit" value="calcular">
     </form>
 </body>
 </html>
+    '; 
+    echo $html;
+}
+
+
+?>
